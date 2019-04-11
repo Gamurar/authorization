@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        android:background="#00000000"
+        app:tabTextColor="#F6F5FC"
+        app:tabSelectedTextColor="@color/colorPrimary"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@id/sliding_tabs">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.sergivonavi.materialbanner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:icon="@drawable/ic_warning"
+        app:messageText="You have lost connection to the Internet.\n"
+        app:buttonRightText="@string/close"
+        app:backgroundColor="@color/colorEditTextField"
+        app:messageTextColor="@color/colorBgDark"/>
+
+    <androidx.appcompat.widget.AlertDialogLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AlertDialogLayout>
+
+
+</RelativeLayout>

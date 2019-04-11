@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:paddingRight="50dp"
+    android:paddingLeft="50dp"
+    android:paddingBottom="50dp"
+    android:paddingTop="0dp">
+
+
+    <ImageView
+        android:id="@+id/person_iv"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_user"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/nickname_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/rounded_edittext"
+        android:padding="14sp"
+        android:paddingStart="28sp"
+        android:paddingEnd="20sp"
+        android:paddingLeft="28sp"
+        android:paddingRight="20sp"
+        android:hint="@string/nickname"
+        android:textColorHint="@color/editTextHintColor"
+        android:layout_marginTop="25dp"
+        app:cornerRadius="25dp"
+        android:drawableLeft="@drawable/ic_person_outline"
+        android:drawableStart="@drawable/ic_person_outline"
+        android:drawablePadding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/person_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/password"
+        android:layout_marginTop="15dp"
+        android:padding="14sp"
+        android:paddingStart="28sp"
+        android:paddingEnd="28sp"
+        android:paddingLeft="28sp"
+        android:paddingRight="28sp"
+        android:textColorHint="@color/editTextHintColor"
+        android:drawableLeft="@drawable/ic_lock_outline"
+        android:drawableStart="@drawable/ic_lock_outline"
+        android:drawablePadding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_in_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        android:padding="14sp"
+        app:cornerRadius="25dp"
+        android:background="@drawable/rounded_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

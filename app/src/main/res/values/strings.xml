@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Test quest</string>
+    <string name="nickname">Nickname</string>
+    <string name="email" translatable="false">E-mail</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="error_nickname_empty">The nickname field can not be empty</string>
+    <string name="error_nickname_short">Too short nickname</string>
+    <string name="error_email_not_valid">The email is not valid</string>
+    <string name="close">close</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    <plurals name="age">
+        <item quantity="one">%s year</item>
+        <item quantity="other">%s years</item>
+    </plurals>
+    <string name="error_no_internet">No internet connection</string>
+    <string name="error_check_internet">Please, check your internet connection and try again.</string>
+    <string name="success">Success</string>
+    <string name="success_sign_up_msg">You have successfully signed up!</string>
+    <string name="ok_btn" translatable="false">OK</string>
+    <string name="error">Error</string>
+    <string name="info">Info</string>
+</resources>

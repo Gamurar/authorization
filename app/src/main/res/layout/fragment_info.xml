@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="50dp"
+    android:paddingTop="15dp"
+    tools:background="@drawable/background_gradient">
+
+
+    <ImageView
+        android:id="@+id/person_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_man_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/person_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/person_iv"
+        app:layout_constraintTop_toTopOf="@+id/person_iv"
+        app:layout_constraintVertical_bias="0.24000001"
+        tools:text="Walter White" />
+
+    <TextView
+        android:id="@+id/activity_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#88FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/name_tv"
+        tools:text="Professional chemist" />
+
+    <ImageView
+        android:id="@+id/ic_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ic_date_range"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/person_iv"
+        app:layout_constraintStart_toStartOf="@+id/person_iv"
+        app:layout_constraintTop_toBottomOf="@+id/person_iv"
+        android:background="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/ic_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_mail_outline_opacity"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/person_iv"
+        app:layout_constraintStart_toStartOf="@+id/person_iv"
+        app:layout_constraintTop_toBottomOf="@+id/ic_age"
+        android:background="@drawable/circle"/>
+
+    <TextView
+        android:id="@+id/age_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_age"
+        app:layout_constraintStart_toEndOf="@+id/ic_age"
+        app:layout_constraintTop_toTopOf="@+id/ic_age"
+        tools:text="61 years"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/email_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_email"
+        app:layout_constraintStart_toEndOf="@+id/ic_email"
+        app:layout_constraintTop_toTopOf="@+id/ic_email"
+        tools:text="heisenberg420@gmail.com"
+        android:textSize="18sp"
+        android:textColor="@color/colorEditTextField"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

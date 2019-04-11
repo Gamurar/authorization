@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Test quest</string>
+    <string name="nickname">Никнейм</string>
+    <string name="password">Пароль</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="sign_in">Войти</string>
+    <string name="error_nickname_empty">Поле никнейма не заполнено</string>
+    <string name="error_nickname_short">Слишком короткий никнейм</string>
+    <string name="error_email_not_valid">Неверный email</string>
+    <string name="close">закрыть</string>
+    <string name="error_password_short">Пароль должен состоять как минимум из 6 символов</string>
+    <plurals name="age">
+        <item quantity="one">%s год</item>
+        <item quantity="other">%s лет</item>
+        <item quantity="few">%s года</item>
+        <item quantity="many">%s лет</item>
+    </plurals>
+    <string name="error_no_internet">Ошибка интернет подключения</string>
+    <string name="error_check_internet">Пожалуйста, проверьте интернет подключение и попробуйте ещё раз.</string>
+    <string name="success">Успех</string>
+    <string name="success_sign_up_msg">Вы были успешно зарегистрированы!</string>
+    <string name="error">Ошибка</string>
+    <string name="info">Информация</string>
+</resources>
