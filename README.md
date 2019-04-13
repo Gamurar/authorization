@@ -6,9 +6,9 @@ Demo application for registration, authorization and showing user info. Sign up,
 <img src="https://raw.githubusercontent.com/Gamurar/docs/master/auth/success-screen.jpg" width="200">
 <img src="https://raw.githubusercontent.com/Gamurar/docs/master/auth/error-screen.jpg" width="200"> -->
 
-Sign up screen             |  Sign in screen
-:-------------------------:|:-------------------------:
-<img src="https://raw.githubusercontent.com/Gamurar/docs/master/auth/sign-up-screen.jpg" width="200">  |  <img src="https://raw.githubusercontent.com/Gamurar/docs/master/auth/sign-in-screen.jpg" width="200">
+Sign up screen             |  Sign in screen		   |  User info screen		   |
+:-------------------------:|:-------------------------:|:-------------------------:|
+<img src="https://raw.githubusercontent.com/Gamurar/docs/master/auth/sign-up-screen.jpg" width="200">  |  <img src="https://raw.githubusercontent.com/Gamurar/docs/master/auth/sign-in-screen.jpg" width="200"> | <img src="https://raw.githubusercontent.com/Gamurar/docs/master/auth/user-info-screen.jpg" width="200">
 
 Install
 -------
