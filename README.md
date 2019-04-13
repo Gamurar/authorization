@@ -1,6 +1,6 @@
 Demo application for registration, authorization and showing user info. Sign up, sign in and user information results are random
 
-![Screenshot](https://raw.githubusercontent.com/Gamurar/docs/master/auth/sign-up-screen.jpg | width=100)
+<img src="https://raw.githubusercontent.com/Gamurar/docs/master/auth/sign-up-screen.jpg" width="100">
 
 Install
 -------
