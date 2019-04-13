@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Test quest</string>
+    <string name="app_name">Authorization</string>
     <string name="nickname">Никнейм</string>
     <string name="password">Пароль</string>
     <string name="sign_up">Регистрация</string>

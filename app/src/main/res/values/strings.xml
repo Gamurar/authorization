@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Test quest</string>
+    <string name="app_name">Authorization</string>
     <string name="nickname">Nickname</string>
     <string name="email" translatable="false">E-mail</string>
     <string name="password">Password</string>
