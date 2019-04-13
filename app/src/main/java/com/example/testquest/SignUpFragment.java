@@ -34,6 +34,7 @@ public class SignUpFragment extends Fragment {
     private boolean mIsKeyboardActive;
     private ImageView mPersonIcon;
     private FragmentManager fragmentManager;
+    private View.OnFocusChangeListener mCloseBanner;
 
     public SignUpFragment() {
     }
@@ -48,6 +49,12 @@ public class SignUpFragment extends Fragment {
         mBanner = getActivity().findViewById(R.id.banner);
         mSignUpBtn = rootView.findViewById(R.id.sign_up_btn);
         mPersonIcon = rootView.findViewById(R.id.person_iv);
+        mCloseBanner = new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) mBanner.dismiss();
+            }
+        };
         return rootView;
     }
 
@@ -80,6 +87,10 @@ public class SignUpFragment extends Fragment {
                 }
             }
         });
+
+        mNickname.setOnFocusChangeListener(mCloseBanner);
+        mEmail.setOnFocusChangeListener(mCloseBanner);
+        mPassword.setOnFocusChangeListener(mCloseBanner);
     }
 
 

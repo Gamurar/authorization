@@ -79,7 +79,7 @@
         android:textColor="@android:color/white"
         android:padding="14sp"
         app:cornerRadius="25dp"
-        android:background="@drawable/rounded_btn"
+        android:background="@drawable/rounded_btn_gradient"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>

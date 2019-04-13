@@ -96,11 +96,10 @@
         android:id="@+id/sign_up_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_btn"
+        android:background="@drawable/rounded_btn_gradient"
         android:padding="14sp"
         android:text="@string/sign_up"
         android:textColor="@android:color/white"
-        app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -27,6 +27,7 @@ public class SignInFragment extends Fragment {
     private EditText mNickname;
     private EditText mPassword;
     private Banner mBanner;
+    private View.OnFocusChangeListener mCloseBanner;
 
     public SignInFragment() {
 
@@ -41,6 +42,12 @@ public class SignInFragment extends Fragment {
         mBanner = getActivity().findViewById(R.id.banner);
         mNickname = rootView.findViewById(R.id.nickname_tv);
         mPassword = rootView.findViewById(R.id.password_et);
+        mCloseBanner = new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) mBanner.dismiss();
+            }
+        };
         return rootView;
     }
 
@@ -69,6 +76,9 @@ public class SignInFragment extends Fragment {
 
             }
         });
+
+        mNickname.setOnFocusChangeListener(mCloseBanner);
+        mPassword.setOnFocusChangeListener(mCloseBanner);
     }
 
     @Override
